@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Text Random</string>
+       <string name="random_app_string">Text Random</string>
+    <string name="roll">RND</string>
+    <string name="copy">COPY</string>
+    <string name="reset">RESET</string>
+
+</resources>
