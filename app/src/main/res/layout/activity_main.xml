@@ -23,19 +23,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/random"
-        />
+        android:contentDescription="@string/todo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/random_app_string"
-        android:textSize="25sp"
         android:textColor="#4883e2"
+        android:textSize="25sp"
 
         />
 
@@ -48,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="40dp"
             android:background="#48e28f"
             android:text="@string/roll"
@@ -57,23 +59,29 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_marginEnd="110dp"
             android:layout_marginRight="110dp"
             android:layout_marginTop="40dp"
             android:background="#48e28f"
             android:text="@string/copy"
-            android:textColor="#FFFF" />
+            android:textColor="#FFFF"
+            tools:ignore="RelativeOverlap" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="40dp"
             android:background="#48e28f"
             android:text="@string/reset"
-            android:textColor="#FFFF" />
+            android:textColor="#FFFF"
+            tools:ignore="RelativeOverlap" />
 
     </RelativeLayout>
 
@@ -81,20 +89,34 @@
         android:id="@+id/switcher"
         android:layout_width="match_parent"
         android:layout_height="84dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:background="#acffa8"
-        android:layout_gravity="center_horizontal"
         android:padding="30sp"
 
 
         />
+
     <TextView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:paddingLeft="115dp"
+        android:paddingStart="115dp"
+        android:textColor="#ef4a5a"
         android:textSize="15sp"
-        android:textColor="#ef4a5a"/>
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tvrights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/copyrights"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
 
 </LinearLayout>

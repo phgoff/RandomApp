@@ -4,5 +4,7 @@
     <string name="roll">RND</string>
     <string name="copy">COPY</string>
     <string name="reset">RESET</string>
+    <string name="copyrights">© 2018 phgoff All Rights Reserved</string>
+    <string name="todo">TODO</string>
 
 </resources>
