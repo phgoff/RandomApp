@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
         Button btnreset = findViewById(R.id.button3);
         final TextView tv1 = findViewById(R.id.tv1);
         final TextView tvswitch = (TextView) mSwitcher.getCurrentView();
+        final String rndtxt = tv1.getText().toString();
 
         btnroll.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +49,8 @@ public class MainActivity extends Activity {
                  String result = randomtext(8);
                 {    // BEGIN_INCLUDE(settext)
                     mSwitcher.setText(String.valueOf(result));
-                    tv1.setText(String.valueOf("ROUND: "+ mCounter));
+
+                    tv1.setText(String.valueOf( rndtxt + mCounter));
                 }   // END_INCLUDE(settext)
 
             }
@@ -61,7 +63,7 @@ public class MainActivity extends Activity {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("", tvswitch.getText());
                 clipboard.setPrimaryClip(clip);
-                Toast.makeText(getApplicationContext(),"Copied to Clipboard",
+                Toast.makeText(getApplicationContext(),R.string.cpyclip,
                         Toast.LENGTH_LONG).show();
             }
 
@@ -73,7 +75,7 @@ public class MainActivity extends Activity {
                 mCounter = 0;
                 String data = "";
                 mSwitcher.setText(String.valueOf(data));
-                tv1.setText(String.valueOf("Round: "+ mCounter));
+                tv1.setText(String.valueOf(rndtxt + mCounter));
             }
 
         });

@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">Text Random</string>
-       <string name="random_app_string">Text Random</string>
+    <string name="random_app_string">Text Random</string>
     <string name="roll">RND</string>
     <string name="copy">COPY</string>
     <string name="reset">RESET</string>
     <string name="copyrights">© 2018 phgoff All Rights Reserved</string>
     <string name="todo">TODO</string>
+    <string name="round">ROUND:</string>
+    <string name="cpyclip">Copied to Clipboard</string>
 
 </resources>
