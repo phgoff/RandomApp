@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">สุ่มรหัสผ่าน</string>
+    <string name="random_app_string">สุ่มข้อความและตัวเลข</string>
+    <string name="roll">สุ่ม</string>
+    <string name="copy">คัดลอก</string>
+    <string name="reset">รีเซ็ต</string>
+    <string name="copyrights">© 2018 phgoff All Rights Reserved</string>
+    <string name="todo">TODO</string>
+    <string name="round">รอบที่:</string>
+    <string name="cpyclip">คัดลอกไปยังคลิปบอร์ด</string>
+</resources>
